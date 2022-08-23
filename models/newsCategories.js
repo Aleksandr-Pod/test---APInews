@@ -5,4 +5,4 @@ const categories = Schema ({
 })
 
 const Categories = model('newsCategories', categories);
-module.export = Categories;
+module.export = {Categories};

@@ -1,6 +1,6 @@
 const News = require('../models/news');
 
-export const getNewsByCategory = async (req, res, next) => {
+const getNewsByCategory = async (req, res, next) => {
 
     const {category, page, perPage} = req.query; // ?category=image&page=2&perPage=10
     const skip = (page - 1) * perPage;
@@ -11,3 +11,5 @@ export const getNewsByCategory = async (req, res, next) => {
         next(error);
     }
 } 
+
+module.exports = getNewsByCategory;

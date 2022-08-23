@@ -8,4 +8,4 @@ const news = Schema ({
 })
 
 const News = model('newsCategories', news)
-module.export = News;
+module.export = {News};

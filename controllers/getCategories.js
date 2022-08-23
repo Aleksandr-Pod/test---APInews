@@ -1,6 +1,6 @@
 const Categories = require('../models/newsCategories')
 
-export const getCategories = async (req, res, next) => {
+const getCategories = async (req, res, next) => {
 
     try {
         const result = await Categories.find({});
@@ -8,4 +8,5 @@ export const getCategories = async (req, res, next) => {
     } catch (error) {
         next(error);
     }
-} 
+}
+module.exports = getCategories;
