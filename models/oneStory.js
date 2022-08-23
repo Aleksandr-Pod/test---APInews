@@ -1,11 +1,11 @@
 const {Schema, model} = require ('mongoose');
 
-const news = Schema ({
+const oneStory = Schema ({
     image: {type: String},
     title: {type: String},
     full_description: {type: String},
     likes_quantity: {type: Number}
 })
 
-const News = model('news', news)
-module.exports = News;
+const OneStory = model('oneStory', oneStory)
+module.exports = OneStory;
